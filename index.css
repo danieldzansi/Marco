@@ -1,0 +1,119 @@
+
+:root {
+    --primary-color: #cb38a5;
+    --secondary-color: #333;
+    --background-color: #f4f4f4;
+  }
+  
+  * {
+    
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  
+  .hero-image{
+      width: 200px; 
+      height: 200px; 
+      border-radius: 50%; /* This makes the image circular */
+    
+  }
+  .skills-grid, .project-grid, .achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+  }
+  
+  .skill-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .skill-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  #about{
+    display: grid;
+    place-items: center;
+    padding: 30px 30px 20px;
+    min-height: 100vh;
+   
+  }
+  
+  
+  header {
+    background-color:   #4c1a83;
+    color:  #cb38a5 ;
+    padding: 1rem;
+  }
+  
+  header:hover{
+    color:   #ba5cdb ;
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+  
+  .social-links a .fa-snapchat-ghost {
+    color: #FFFC00;
+  }
+  
